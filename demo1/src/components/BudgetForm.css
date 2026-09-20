@@ -1,0 +1,124 @@
+.form-card {
+  padding: 28px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.heading-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #ede9fe;
+  font-size: 22px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  color: #172554;
+  font-size: 20px;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.form-card label {
+  display: block;
+  margin: 15px 0 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.budget-input,
+.amount-input {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border: 2px solid #ddd6fe;
+  border-radius: 14px;
+  background: #fafaff;
+  transition: 0.3s;
+}
+
+.budget-input:focus-within,
+.amount-input:focus-within {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.12);
+}
+
+.budget-input span,
+.amount-input span {
+  padding-left: 15px;
+  color: #7c3aed;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.budget-input input,
+.amount-input input {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #172554;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.form-card select,
+.form-card input[type="text"] {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid #e0e7ff;
+  border-radius: 12px;
+  outline: none;
+  background: white;
+  color: #334155;
+  transition: 0.3s;
+}
+
+.form-card select:focus,
+.form-card input[type="text"]:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
+}
+
+.form-card hr {
+  margin: 28px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+
+.add-button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 14px;
+  border: none;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
+}
+
+.add-button:active {
+  transform: scale(0.97);
+}
