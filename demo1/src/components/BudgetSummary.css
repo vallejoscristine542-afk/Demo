@@ -1,0 +1,84 @@
+.summary-card {
+  padding: 28px;
+}
+
+.summary-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.summary-title span {
+  font-size: 25px;
+}
+
+.summary-title h2 {
+  margin: 0;
+  color: #172554;
+  font-size: 21px;
+}
+
+.summary-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.summary-item p {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.summary-item h3 {
+  margin: 0;
+  color: #2563eb;
+  font-size: 27px;
+}
+
+.summary-item .expense-value {
+  color: #7c3aed;
+}
+
+.summary-item.remaining h3 {
+  color: #16a34a;
+}
+
+.summary-item.remaining h3.danger-value {
+  color: #dc2626;
+}
+
+.progress-section {
+  margin-top: 25px;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #475569;
+  font-size: 13px;
+}
+
+.progress-label strong {
+  color: #7c3aed;
+}
+
+.progress-bar {
+  height: 13px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #e5e7eb;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    #7c3aed,
+    #2563eb
+  );
+  transition: width 0.4s ease;
+}
