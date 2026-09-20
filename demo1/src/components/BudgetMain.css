@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(124, 58, 237, 0.18),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(37, 99, 235, 0.15),
+      transparent 30%
+    ),
+    #f6f7ff;
+  color: #172554;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1150px;
+  margin: auto;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 1.3fr 0.9fr;
+  gap: 25px;
+}
+
+.main-column,
+.side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card,
+.tips-card {
+  background: white;
+  border-radius: 24px;
+  border: 1px solid rgba(124, 58, 237, 0.1);
+  box-shadow: 0 15px 40px rgba(49, 46, 129, 0.1);
+}
+
+.tips-card {
+  padding: 25px;
+  background: linear-gradient(135deg, #ffffff, #f5f3ff);
+}
+
+.tips-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.tips-header > span {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  color: white;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  font-size: 22px;
+}
+
+.tips-header h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.tips-header p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tip:last-child {
+  border-bottom: none;
+}
+
+.tip > span {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  border-radius: 9px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+}
+
+.tip p {
+  margin: 4px 0 0;
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .app {
+    padding: 25px 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .card,
+  .tips-card {
+    border-radius: 18px;
+  }
+}
